@@ -1,0 +1,60 @@
+.techSection {
+  padding: 120px 0;
+  position: relative;
+  background: var(--color-bg-deep);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.techCard {
+  position: relative;
+  padding: 24px 40px;
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  color: var(--color-text-primary);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.techName {
+  font-family: var(--font-outfit);
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.glow {
+  display: none;
+}
+
+.techCard:hover {
+  border-color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .techCard {
+    padding: 16px 24px;
+  }
+  .techName {
+    font-size: 0.95rem;
+  }
+}

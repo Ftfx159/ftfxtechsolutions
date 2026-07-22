@@ -1,0 +1,78 @@
+.magneticButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  overflow: hidden;
+  transition: transform 0.2s;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  z-index: 0;
+  transition: var(--transition-smooth);
+}
+
+/* Primary Variant */
+.primary {
+  color: #FFFFFF;
+}
+.primary .background {
+  background: var(--color-text-primary);
+}
+
+.primary:hover .background {
+  transform: scale(1.05);
+  background: #000000;
+}
+
+/* Secondary Variant */
+.secondary {
+  color: var(--color-text-primary);
+}
+.secondary .background {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+}
+
+.secondary:hover .background {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-text-secondary);
+}
+
+/* Glass Variant (Now just a subtle outline variant) */
+.glass {
+  color: var(--color-text-primary);
+}
+.glass .background {
+  background: transparent;
+  border: 1px solid var(--color-text-primary);
+}
+
+.glass:hover .background {
+  background: var(--color-bg-secondary);
+}

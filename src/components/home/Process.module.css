@@ -1,0 +1,145 @@
+.processSection {
+  padding: 160px 0;
+  position: relative;
+  background: var(--color-bg-deep);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.timelineContainer {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 40px;
+}
+
+.lineTrack {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.lineFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-purple));
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.node {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-premium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: var(--transition-bounce);
+}
+
+.step:hover .node {
+  box-shadow: 0 15px 30px rgba(175, 82, 222, 0.15);
+  transform: scale(1.15) translateY(-5px);
+  background: #FFFFFF;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.contentCard {
+  width: 100%;
+  border-radius: 24px !important;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  font-family: var(--font-outfit);
+  letter-spacing: -0.02em;
+}
+
+.description {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .lineTrack {
+    top: 0;
+    left: 40px;
+    width: 2px;
+    height: 100%;
+  }
+
+  .lineFill {
+    width: 100% !important;
+    height: auto;
+    background: linear-gradient(180deg, var(--color-accent-cyan) 0%, var(--color-accent-purple) 100%);
+  }
+  
+  .step {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .node {
+    margin-bottom: 0;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+  
+  .contentCard {
+    padding: 24px;
+  }
+}
