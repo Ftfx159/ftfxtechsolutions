@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 import styles from './About.module.css';
+import SectionHeading from '../ui/SectionHeading';
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,7 @@ export default function About() {
   return (
     <section id="about" ref={containerRef} className={styles.aboutSection}>
       <div className={styles.container}>
+        <SectionHeading title="About Us" centered />
         <div className={styles.grid}>
           {/* Left: Animated Illustration */}
           <div className={styles.illustration}>
