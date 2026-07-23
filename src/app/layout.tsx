@@ -4,6 +4,8 @@ import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider';
 import CustomCursor from '@/components/ui/CustomCursor';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'FTFx Tech Solutions | Premium Data Recovery & IT Services Gurgaon',
   description: 'Advanced Data Recovery, Computer Repair, Troubleshoot Mac OS Support, Troubleshoot Windows OS Support, OS Installation Windows and Mac, and Website Development in Gurgaon, Haryana.',
