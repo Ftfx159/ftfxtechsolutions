@@ -12,6 +12,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Services', path: '#services' },
   { name: 'About Us', path: '#about' },
+  { name: 'Contact Us', path: '#contact' },
 ];
 
 export default function Header() {
@@ -102,8 +103,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <MagneticButton variant="primary" className={styles.ctaButton} onClick={(e) => handleNavClick(e as any, '#contact')}>
-          Contact Us
+        <MagneticButton variant="primary" className={styles.ctaButton} onClick={(e) => handleNavClick(e as any, '/store')}>
+          Our Store
         </MagneticButton>
       </div>
     </header>
