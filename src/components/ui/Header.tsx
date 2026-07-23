@@ -103,7 +103,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <MagneticButton variant="primary" className={styles.ctaButton} onClick={() => window.open('https://store.ftfxtechsolutions.com', '_blank')}>
+        <MagneticButton variant="primary" className={styles.ctaButton} onClick={() => window.open('https://store.ftfxtechsolutions.com/', '_blank')}>
           Our Store
         </MagneticButton>
       </div>
