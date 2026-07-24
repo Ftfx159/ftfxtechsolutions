@@ -103,7 +103,10 @@ export default function Header() {
           </ul>
         </nav>
 
-        <MagneticButton variant="primary" className={styles.ctaButton} onClick={() => window.open('https://store.ftfxtechsolutions.com/', '_blank')}>
+        <MagneticButton variant="primary" className={styles.ctaButton} onClick={() => {
+          const storeUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3006' : 'https://store.ftfxtechsolutions.com/';
+          window.open(storeUrl, '_blank');
+        }}>
           Our Store
         </MagneticButton>
       </div>
