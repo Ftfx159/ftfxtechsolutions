@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/accessibility/page": "/accessibility",
+  "/compliance/page": "/compliance",
+  "/copyright-policy/page": "/copyright-policy",
+  "/data-recovery/page": "/data-recovery",
+  "/free-evaluation/page": "/free-evaluation",
+  "/grievance-policy/page": "/grievance-policy",
+  "/icon.png/route": "/icon.png",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/refund-policy/page": "/refund-policy",
+  "/robots.txt/route": "/robots.txt",
+  "/security-disclosure/page": "/security-disclosure",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/terms-of-service/page": "/terms-of-service",
+  "/troubleshoot/page": "/troubleshoot",
+  "/website-design/page": "/website-design"
+}
